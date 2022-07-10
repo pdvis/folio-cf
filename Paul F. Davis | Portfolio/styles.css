@@ -1,9 +1,13 @@
-header {font-family: 'lemonmilk-bold-italic';
+header {font-family: 'lemon';
         font size: 64px
+    }
+    @font-face {
+      font-family: 'lemon';
+      src: url(lemonmilk.otf);
     }
 body {
   background-color: #fdfdfd;
-  font-family: 'Poppins-Regular.ttf', sans-serif;  /* how should I handle this?*/
+  font-family: 'Poppins-Regular.ttf', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
@@ -12,18 +16,22 @@ body {
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
-.h1 {
+h1 {
   font-size: 2.75em;
   font-weight: 700;
   color: #000000;
 }
 
-.h2 {
+h2 {
   font-size: 2.25em;
   font-weight: 700;
 }
 p { font-size: 1.25em;
-    font-weight: 700}
+    font-weight: 30;
+    text-overflow: ellipsis;
+    width: 800px;
+    text-align: left;
+    }
 img {
   width: 80%;
 }
@@ -34,8 +42,34 @@ backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
-font-family: 'lemonmilk-bold-italic';
+font-family: 'lemon';
 width: 200px;
 height: 56px;
-corner radius: 20;
-} /*help*/
+border-radius: 20;
+}
+
+ul {
+  list-style-type: none;
+  margin: 20;
+  padding: 60;
+  display: inline;
+  text-decoration: none;
+}
+li {
+  text-decoration: none;
+  float: left;
+  margin: 20;
+  padding: 40;
+  color: #37352F;
+}
+
+
+ul a:hover {text-decoration: underline;
+color: #fdb633;
+}
+.icon:hover {
+color: #fdb633;
+}
+
+#cta { width: 64px;
+height: 64px}
