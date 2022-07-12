@@ -1,6 +1,6 @@
     @font-face {
       font-family: 'lemon';
-      src: url(..lemonmilk.otf);
+      src: url(../lemonmilk.otf);
     }
 body {
   background-color: #fdfdfd;
@@ -18,8 +18,8 @@ h1 {
   font-weight: 700;
   color: #000000;
   text-overflow: ellipsis;
-  width: 80%;
-  text-align: left
+  width: 100%;
+  text-align: justify;
 }
 
 h2 {
@@ -37,16 +37,14 @@ img {
   ;
 }
 #button {
-width: 200px;
-height: 100px;
+width: 400px;
+height: 200px;
 background: rgba( 239, 225, 225, 0.45 );
 backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
-font-family: 'lemon';
-align-items: center;
-}
+font-family: 'lemon';}
 
 /*.nav {
   list-style-type: none;
