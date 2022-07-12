@@ -1,3 +1,5 @@
+
+html {box sizing: border-box;} 
 @font-face {
     font-family: 'lemon';
     src: url(../lemonmilk.otf);
