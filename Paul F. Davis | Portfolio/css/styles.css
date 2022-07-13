@@ -1,4 +1,27 @@
-html {box sizing: border-box;}
+* {box sizing: border-box;}
+
+#c-left{ float: left;
+width: 45%;
+margin-left: auto;
+margin-right:auto;
+}
+
+#c-left h2 { text-align: center;
+}
+
+#c-left p { text-align: center;
+}
+
+#c-right{
+width: 45%;
+margin-left: auto;
+margin-right:auto;
+float: right;
+}
+#c-right h2 {text-align: center;}
+
+#c-right p { text-align: center;}
+
 @font-face {
     font-family: 'lemon';
     src: url(../lemonmilk.otf);
@@ -51,7 +74,7 @@ ul {
     font-family: 'lemon';
     font-size: 120%;
     max-width: 100%;
-    animation: fadeIn 5s;
+    animation: fadeIn 10s;
 }
 li a {
     float: right;
@@ -61,11 +84,13 @@ li a {
     text-decoration: none;
     text-align: center;
     align-items: baseline;
-    animation: fadeIn 10s;
 }
 
-@keyframes fadeIn { 0% {opacity: 0;} 100% {opacity: 1; }
+@keyframes fadeIn {
+   0% {opacity: 0;} 100% {opacity: 1;}
+
 }
+
 li a:hover {
     color: #fdb633;
 }
@@ -118,6 +143,7 @@ li a:hover {
 }
 
 #logo {padding-left: 20px;}
+
 
 
 .hello-parent {
@@ -411,5 +437,12 @@ li a:hover {
 .custom-br-2 {height: 200px;}
 
 
-@media screen and (min-width: 600px) {}
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 600px) { {
+      flex-direction: column;
+      margin: 10px;
+    }
+  }}
+@media screen and (min-width: 1024px) {
+  p {font-size: 18px; } * {margin: 20;}
+  }
+}
