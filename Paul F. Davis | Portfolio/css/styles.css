@@ -437,18 +437,13 @@ float: right;
 .custom-br-2 {height: 200px;}
 
 
-@media screen and (min-width: 640px) { {
-      flex-direction: column;
-      margin: 10px;
+@media only screen and (max-width: 640px) { {
+      flex-direction: column; }
+      #main{max-width: 80%;
+      align-content: center;}
     }
-    nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
-  }}
-@media screen and (min-width: 1024px) {
-  p {font-size: 18px; } * {margin: 20;}
+@media only screen and (min-width: 1024px) {
+  p {font-size: 1.4em; } * {margin: 30;}
   }
 
 }
