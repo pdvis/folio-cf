@@ -164,30 +164,16 @@ li a:hover {
 
 #logo {padding-left: 20px;}
 
-#c-left{ float: left;
-width: 45%;
-margin-left: auto;
-margin-right:auto;
+
+.grid-layout-one .card {
+  width: 100%;
 }
 
-#c-left h2 { text-align: center;
+.grid-layout-one .grid-parent
+{ display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-
-#c-left p { text-align: center;
-}
-
-#c-right{
-width: 45%;
-margin-left: auto;
-margin-right:auto;
-float: right;
-}
-#c-right h2 {text-align: center;}
-
-#c-right p { text-align: center;}
-
-#arrow {align-self: flex-start;}
-
 
 /* hello animation*/
 
@@ -489,15 +475,7 @@ float: right;
       }
       .button {align-self: center;
       }
-      #c-left{ float: none;
-      width: 50%:
-      }
-
-      #c-right{
-      float: none;
-      width: 50%:
-      }
-       .row, .content-box, {
+      .row, .content-box, {
          flex-direction: row;
 }
  .content-box {width:98%}
