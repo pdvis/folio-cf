@@ -1,3 +1,4 @@
+/* general/element changes */
 * {box-sizing: border-box;}
 
 @font-face {
@@ -66,15 +67,10 @@ li a {
     align-items: baseline;
 }
 
-#home-nav {animation: fadeIn 10s;}
-
-@keyframes fadeIn {
-   0% {opacity: 0;} 100% {opacity: 1;}
-
-}
-
 li a:hover {
     color: #fdb633;}
+
+/* welcome to ze classes */
 
 .row {
     display: flex;
@@ -142,6 +138,9 @@ li a:hover {
 .icon:hover {
    opacity: 80%
 }
+
+/* SHOW ME YOUR ID's */
+
 #cta {
     width: 64px;
     height: 64px
@@ -155,6 +154,12 @@ li a:hover {
     margin: -8px;
     background-color: #f1f1f1;
     padding: 20PX;
+}
+
+#home-nav {animation: fadeIn 10s;}
+
+@keyframes fadeIn {
+   0% {opacity: 0;} 100% {opacity: 1;}
 }
 
 #logo {padding-left: 20px;}
@@ -184,6 +189,7 @@ float: right;
 #arrow {align-self: flex-start;}
 
 
+/* hello animation*/
 
 .hello-parent {
   height: 100%;
@@ -452,13 +458,13 @@ float: right;
   }
 }
 
-.red-dot {
+.yellow-dot {
   stroke-width: 44px;
   stroke-linecap: round;
-  animation: red-dot-grow 8s ease-out forwards;
+  animation: yellow-dot-grow 8s ease-out forwards;
 }
 
-@keyframes red-dot-grow {
+@keyframes yellow-dot-grow {
   0% {
     stroke-width: 0px;
   }
@@ -475,6 +481,7 @@ float: right;
 
 .custom-br-2 {height: 200px;}
 
+/* media query */
 
 @media only screen and (max-width: 640px) { {
       flex-direction: column; }
@@ -491,7 +498,7 @@ float: right;
       width: 50%:
       }
        .row, .content-box, {
-         flex-direction: column;
+         flex-direction: row;
 }
  .content-box {width:98%}
 }
