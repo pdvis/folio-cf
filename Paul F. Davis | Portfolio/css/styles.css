@@ -570,7 +570,7 @@ li a:hover {
 .grid-layout-home .grid-parent {
   display: grid;
   gap: 1em;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
 }}
 
 .content-box-small {
