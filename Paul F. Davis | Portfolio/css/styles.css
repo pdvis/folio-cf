@@ -3,6 +3,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 @font-face {
 	font-family: 'lemon';
 	src: url(../lemonmilk.otf);
@@ -19,7 +23,7 @@ body {
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 1.6;
-	color: #4a4a4a;
+	color: #37352f;
 	max-width: 100%
 }
 
@@ -31,16 +35,16 @@ h4 {
 }
 
 h1 {
-	font-size: 4em;
+	font-size: 6em;
 	font-weight: 700;
 	color: #000000;
 	text-overflow: ellipsis;
-	text-align: center;
+	text-align: left;
 	width: 100%;
 }
 
 h2 {
-	font-size: 2.25em;
+	font-size: 3em;
 	font-weight: 700;
 }
 
@@ -62,30 +66,7 @@ a {
 	color: #37352F
 }
 
-ul {
-	list-style-type: none;
-	margin: -8px;
-	padding: 10px;
-	width: 100%;
-	background-color: #f1f1f1;
-	font-family: 'lemon';
-	font-size: 120%;
-	max-width: 100%;
-}
 
-li a {
-	float: right;
-	display: inline-block;
-	color: #000;
-	padding: 32px 16px;
-	text-decoration: none;
-	text-align: center;
-	align-items: baseline;
-}
-
-li a:hover {
-	color: #fdb633;
-}
 
 /* welcome to ze classes */
 
@@ -113,6 +94,11 @@ li a:hover {
 	border-radius: 20px;
 }
 
+.O { color: #3751AE;
+}
+
+.R { color: #FDB633;
+}
 
 .button {
 	border-radius: 10px;
@@ -158,15 +144,20 @@ li a:hover {
 	height: 40px;
 }
 
-.icon {
+.icon-footer {
 	padding: 10px;
 	transition-property: opacity;
 }
 
-.icon:hover {
+.icon-footer:hover {
 	opacity: 80%
 }
 
+.icon {}
+
+.navtoggle.responsive li  {
+	  display: block;
+}
 /* SHOW ME YOUR ID's */
 
 #cta {
@@ -186,7 +177,7 @@ li a:hover {
 	padding: 20PX;
 }
 
-#home-nav {
+#home-nav,.home-h1 {
 	animation: fadeIn 10s;
 }
 
@@ -214,6 +205,9 @@ li a:hover {
 	gap: 1em;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+
+
 
 /* hello animation*/
 
@@ -544,49 +538,156 @@ li a:hover {
 }
 
 .custom-br-2 {
-	height: 200px;
+	height: 150px;
 }
 
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
 /* media query */
 
 @media only screen and (min-width: 640px) {
-	p {
-		text-align: center;
+		p {
+			text-align: center;
+		}
+
+		.button {
+			align-self: center;
+		}
+
+		.content-box {
+			width: 100%;
+		}
 	}
 
-	.button {
-		align-self: center;
+	.grid-layout-home .content-box {
+	  width: 100%;
 	}
 
-	.content-box {
+	.grid-layout-home .grid-parent {
+	  display: grid;
+	  gap: 1em;
+	  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
+	}}
+
+	.case-studies {text-align: right;}
+
+	.content-box-small {
 		width: 100%;
 	}
-}
 
-.grid-layout-home .content-box {
-  width: 100%;
-}
+	ul {
+		list-style-type: none;
+		margin: -8px;
+		padding: 10px;
+		width: 100%;
+		font-family: 'lemon';
+		color: black;
+		font-size: 120%;
+		max-width: 100%;
+	}
 
-.grid-layout-home .grid-parent {
-  display: grid;
-  gap: 1em;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) ;
-}}
+	li a {
+		float: right;
+		color: #000;
+		padding: 32px 16px;
+		text-decoration: none;
+		align-items: baseline;
+		margin-top: 20px;
+	}
 
-.content-box-small {
-	width: 100%;
+	li a:hover {
+		color: #fdb633;
+	}
+
+	.navtoggle li:not(:last-child) {
+	  display: inline-block;
+	}
+
+	.navtoggle li:not(:last-child) {
+	  display: none;
+	}
+
+	.navtoggle, .navtoggle.responsive {
+	  position: relative;
+	}
+
+	.navtoggle li .ham{
+	  position: absolute;
+		right: 0;
+	  top: 2px;
+	}
+
+	nav > ul > li {
+	  display: inline-block;
+	}
+
+	nav > ul {
+	  margin: 1em 0
+	}
+
+
+	.logo ul {align-items: baseline;
+	}
+
+	.ham { margin-top: 0;
+				 padding: 0;}
+
+
+	header { padding-top: 20px;
+	}
 }
 
 @media only screen and (min-width: 1024px) {
 	p {
 		font-size: 1.4em;
 	}
-
-	p,
-	h1,
-	h2 {
+ 	h1 { text-align: left;
+	}
+	h2 {text-align: right;}
+	p {
 		max-width: 100%;
 		text-align: center;
+	}
+
+	.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+	.navtoggle li:last-child {
+	  display: none;
+	}
+
+	ul {
+		list-style-type: none;
+		margin: -8px;
+		padding: 10px;
+		width: 100%;
+		font-family: 'lemon';
+		color: black;
+		font-size: 120%;
+		max-width: 100%;
+	}
+
+	li a {
+		float: right;
+		color: #000;
+		padding: 32px 16px;
+		text-decoration: none;
+		align-items: baseline;
+		margin-top: 20px;
+	}
+
+	li a:hover {
+		color: #fdb633;
 	}
 
 	.grid-layout-home .content-box {
