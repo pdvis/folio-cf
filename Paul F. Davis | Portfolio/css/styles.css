@@ -619,6 +619,7 @@ nav > ul {
 .logo ul {align-items: baseline;
 }
 
+/* changed from lessons .icon to .ham */
 .ham { margin-top: 0;
 			 padding: 0;}
 
@@ -698,7 +699,7 @@ header { padding-top: 20px;
 		.navtoggle li:not(:last-child) {
 		display: inline-block;
 	}
-		.navtoggle li:last-child {
+		.navtoggle li:not(:last-child){
 			display: none;
 		}
 
