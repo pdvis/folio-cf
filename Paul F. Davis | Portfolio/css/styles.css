@@ -552,6 +552,11 @@ a {
 /* media query */
 
 @media only screen and (min-width: 640px) {
+
+#logo { float: right;
+margin-right: 5%;
+
+}
 		p {
 			text-align: center;
 		}
@@ -580,18 +585,16 @@ a {
 		width: 100%;
 	}
 
-	ul {
+	ul:not(:first-child) {
 		list-style-type: none;
 		margin: -8px;
 		padding: 10px;
-		width: 100%;
 		font-family: 'lemon';
 		color: black;
-		font-size: 120%;
-		max-width: 100%;
+		font-size: 80%;
 	}
 
-	li a {
+	li a:not(:first-child) {
 		float: right;
 		color: #000;
 		padding: 32px 16px;
@@ -616,21 +619,23 @@ nav > ul {
 }
 
 
-.logo ul {align-items: baseline;
-}
 
+a .ham {margin-top: 0px;
+padding: 0px;}
 /* changed from lessons .icon to .ham */
-.ham { margin-top: 0;
-			 padding: 0;}
+.ham {
+	margin: 0px;
+	padding: 0px;
+}
 
 
 header { padding-top: 20px;
 }
-.navtoggle li:not(:last-child) {
+.navtoggle li:not(:first-child) {
   display: none;
 }
 
-.navtoggle li:not(:last-child) {
+.navtoggle li:not(:first-child) {
 	display: inline-block;
 }
 
@@ -644,6 +649,10 @@ header { padding-top: 20px;
 	right: 0;
 	top: 2px;
 }
+
+nav {height: auto;}
+
+
 
 
 }
@@ -674,6 +683,18 @@ header { padding-top: 20px;
 		grid-template-columns: 2fr 1fr;
 	}}
 
+	#logo { max-width: 150px;
+		 float: left;
+		 margin-left: 5%;
+		margin-top: -5%;
+
+	}
+
+	.navtoggle li:first-child {
+  display: none;
+}
+
+
 	/* 2.3 stuff*/
 
 		ul {
@@ -696,14 +717,18 @@ header { padding-top: 20px;
 			margin-top: 20px;
 		}
 
-		.navtoggle li:not(:last-child) {
-		display: inline-block;
-	}
-		.navtoggle li:not(:last-child){
-			display: none;
-		}
+
+		.ham { fill: #FFFFFF;}
 
 		nav > ul {
 		  list-style-type: none;
 		  padding: 0;
 		}
+
+		ul {
+    transform: rotate(180deg);
+		}
+		ul > li {
+    transform: rotate(-180deg);
+		}
+	}
