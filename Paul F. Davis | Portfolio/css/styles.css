@@ -193,6 +193,7 @@ a {
 
 #logo {
 	padding-left: 20px;
+
 }
 
 
@@ -549,14 +550,11 @@ a {
   display: block;
 }
 
+
 /* media query */
 
 @media only screen and (min-width: 640px) {
 
-#logo { float: right;
-margin-right: 5%;
-
-}
 		p {
 			text-align: center;
 		}
@@ -597,10 +595,10 @@ margin-right: 5%;
 	li a:not(:first-child) {
 		float: right;
 		color: #000;
-		padding: 32px 16px;
+		padding: 32px 0px;
+		padding-top: 0px;
 		text-decoration: none;
 		align-items: baseline;
-		margin-top: 20px;
 	}
 
 	li a:hover {
@@ -610,27 +608,15 @@ margin-right: 5%;
 
 
 
-nav > ul > li {
+nav > ul > li:not(#logo) {
 	display: inline-block;
 }
 
-nav > ul {
-	margin: 1em 0
-}
 
 
 
-a .ham {margin-top: 0px;
-padding: 0px;}
-/* changed from lessons .icon to .ham */
-.ham {
-	margin: 0px;
-	padding: 0px;
-}
 
 
-header { padding-top: 20px;
-}
 .navtoggle li:not(:first-child) {
   display: none;
 }
@@ -650,9 +636,11 @@ header { padding-top: 20px;
 	top: 2px;
 }
 
-nav {height: auto;}
-
-
+#logo { max-width: 150px;
+	 float: left;
+	 margin-left: 5%;
+	 padding-top: 10%;
+}
 
 
 }
@@ -664,6 +652,7 @@ nav {height: auto;}
  	h1 { text-align: left;
 	}
 	h2 {text-align: right;}
+
 	p {
 		max-width: 100%;
 		text-align: center;
@@ -677,27 +666,19 @@ nav {height: auto;}
 		width: 100%;
 	}
 
+	#logo { margin-top: 2%;}
+
+
 	.grid-layout-home .grid-parent {
 		display: grid;
 		gap: 1em;
 		grid-template-columns: 2fr 1fr;
 	}}
 
-	#logo { max-width: 150px;
-		 float: left;
-		 margin-left: 5%;
-		margin-top: -5%;
 
-	}
+/*buggy solution to mobile viewport allignment issue margin-top: -100px; when used in code chunck bellow */
 
-	.navtoggle li:first-child {
-  display: none;
-}
-
-
-	/* 2.3 stuff*/
-
-		ul {
+		ul:not(:first-child){
 			list-style-type: none;
 			margin: -8px;
 			padding: 10px;
@@ -714,12 +695,19 @@ nav {height: auto;}
 			padding: 32px 16px;
 			text-decoration: none;
 			align-items: baseline;
-			margin-top: 20px;
 		}
 
 
-		.ham { fill: #FFFFFF;}
-
+		.navtoggle li:not(:first-child){
+			display: none;
+		}
+/*hacky solutions to the hamberger being shown in this viewport which cause issues in the mobile viewport */
+/*
+		.navtoggle .ham{
+			display: none;
+		}
+#ham { opacity: 0%}
+*/
 		nav > ul {
 		  list-style-type: none;
 		  padding: 0;
