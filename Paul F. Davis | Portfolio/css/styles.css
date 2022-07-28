@@ -613,6 +613,7 @@ margin-left: 3em;
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -637,6 +638,44 @@ nav {
   display: inline-block;
   width: 100%;
 }
+=======
+
+
+
+	ul{ float: right;
+		font-family: 'poppins-black';
+		margin-top: 4em;
+		padding-left: 0;
+		padding-right: 2em;
+	}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+li {margin-right: 1em;
+margin-top: 3em;}
+
+
+
+ nav {
+  display: inline-block;
+  width: 100%;
+}
+
+.grid-layout-home .grid-parent {
+	display: grid;
+	gap: 1em;
+	grid-template-columns: 1fr;
+}
+
+.grid-layout-home .content-box {
+	width: 100%;
+}
+
+.logo { margin-left: 5%;
+padding-top: 300px;}
+>>>>>>> Stashed changes
 =======
 
 
@@ -742,7 +781,11 @@ padding-top: 300px;}
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	ul:not(:last-child) {
+=======
+	/*	ul:not(:last-child) {
+>>>>>>> Stashed changes
 =======
 	/*	ul:not(:last-child) {
 >>>>>>> Stashed changes
@@ -756,10 +799,17 @@ padding-top: 300px;}
 		color: black;
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 		font-size: 100%;
 	}
 
 	li a:not(:last-child) {
+=======
+		font-size: 80%;
+	} */
+
+/*	li a:not(:last-child) {
+>>>>>>> Stashed changes
 =======
 		font-size: 80%;
 	} */
@@ -782,6 +832,7 @@ padding-top: 300px;}
 
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 	nav > ul {
 	  margin: 2em 0;
@@ -790,10 +841,13 @@ padding-top: 300px;}
 >>>>>>> Stashed changes
 
 
+=======
+>>>>>>> Stashed changes
 
 	li a:hover {
 		color: #fdb633;
 	}
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 /* 2.3 stuff*/
@@ -840,9 +894,23 @@ padding-top: 300px;}
 
 #id { max-height: 690px;}
 
+=======
+
+/* removed font-size as defined above */
+
+
+
+
+#id { max-height: 690px;}
+
 
 }
 
+@media only screen and (min-width: 1024px) {
+>>>>>>> Stashed changes
+
+
+<<<<<<< Updated upstream
 @media only screen and (min-width: 1024px) {
 >>>>>>> Stashed changes
 
@@ -869,6 +937,8 @@ padding-top: 300px;}
 
 
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 	p {
 		font-size: 1.4em;
 		text-align: left;
@@ -888,6 +958,7 @@ padding-top: 300px;}
  ul { margin-right: 2em;}
 
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 	.grid-layout-home .grid-parent {
@@ -922,6 +993,11 @@ padding-top: 300px;}
 
 /*
 >>>>>>> Stashed changes
+=======
+
+
+/*
+>>>>>>> Stashed changes
 
 		li a {
 			float: right;
@@ -936,6 +1012,7 @@ padding-top: 300px;}
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 /*hacky solutions to the hamberger being shown in this viewport which cause issues in the mobile viewport */
 /*
 		.navtoggle .ham{
@@ -947,6 +1024,8 @@ padding-top: 300px;}
 		  list-style-type: none;
 		  padding: 0;
 		}
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
