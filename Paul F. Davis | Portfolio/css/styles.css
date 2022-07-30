@@ -55,6 +55,16 @@ h2 {
 	font-weight: 900;
 }
 
+h4 {
+	font-family: 'poppins-black';
+	font-size: 32px;
+	text-align: center;
+	transition-property: color;
+}
+
+h4 a:hover {color: #fdb633;
+}
+
 p {
 	font-size: 1.25em;
 	font-weight: 30;
@@ -85,23 +95,32 @@ height: 100%}
 }
 
 .cs-h2-bocav { text-align: right;
-	 margin-top: 20px;
+	margin-top: 0px;
 margin-bottom: 20px;
-font-size: 5em;
+font-size: 3em;
 color:#fdfdfd;}
 
 /* welcome to ze classes */
 
 .arrow {
-	padding: 10px;
 	transition-property: opacity;
-	margin-top: 2.25em;
+	max-height: 50px;
+	margin-top: 3em;
 }
 
 .arrow:hover {
 	opacity: 80%
 }
 
+.arrow-bocav {
+	margin-top: 2em;
+	transition-property: opacity;
+	max-height: 50px;
+}
+
+.arrow-bocav:hover {
+	opacity: 80%
+}
 .row {
 	display: flex;
 	flex-wrap: wrap;
@@ -117,20 +136,30 @@ color:#fdfdfd;}
 
 .cs-p { font-family: "poppins-black";
 	text-align: right;
-font-size: 2.5em;
-color: #fdfdfd; }
+font-size: 1em;
+color: #fdfdfd;
+margin-top: 2em;}
 
 .cs-p-bocav {font-family: "poppins-black";
 	text-align: right;
-font-size: 2.5em;
+font-size: 1.25em;
 color: #fdfdfd;
-margin-bottom: 0px}
+margin-bottom: 0px;
+ }
+
+.cs-p-port {font-family: "poppins-black";
+	text-align: right;
+font-size: 1em;
+color: #fdfdfd;
+margin-bottom: 0px;
+margin-top: 0px;}
 
 .cs-h2 {color:#00000099;
 	text-align: right;
-	 margin-top: 20px;
+	 margin-top: 0px;
 margin-bottom: 20px;
-font-size: 5em}
+font-size: 3em;
+}
 
 .cs-h1 {display: none;
 }
@@ -138,39 +167,60 @@ font-size: 5em}
 }
 
 .cs-h2-port {text-align: right;
-	 margin-top: 20px;
-margin-bottom: 20px;
-font-size: 5em;
+	 margin-top: 0px;
+margin-bottom: 0px;
+font-size: 2em;
 }
 
-#arrow{ margin-top: 7em;
-fill: #fdfdfd}
 
-#arrow-port{ margin-top: 1em;}
+
+.arrow-port {
+	margin-top: 5em;
+	transition-property: opacity;
+	max-height: 50px;
+}
+
+.arrow-port:hover {
+	opacity: 80%
+}
 
 .cs-picture {float: left;
-shape-outside: circle(50%);
+shape-outside: polygon(0px 17%, 0px 81%, 91.00% 36.20%);
 height: 100%;
+width:95%;
 }
+polygon(0px 17%, 0px 81%, 102.29% 69.65%)
 
+
+.cs-root {
+	flex-wrap: wrap;
+}
 .cs-bocav {
+	flex-wrap: wrap;
+}
+.cs-port {
 	flex-wrap: wrap;
 }
 
 .cs-picture-bocav{float: left;
-shape-outside: circle(20%);
-max-width: 100%;
+shape-outside:  polygon(0px 17%, 0px 81%, 94.97% 63.75%);
+margin-left: 1em ;
 margin-top: 2em;
-margin-left: 4em;}
-
-.cs-picture-port{float: left;
-shape-outside: circle(20%);
-max-width: 425px;
-max-height: 425px;
-margin-top: 6em;
-margin-left: 3em;
+max-width: 300px;
+width: 65%
 }
 
+.cs-picture-port{float: left;
+shape-outside: polygon(0px 17%, 0px 81%, 84.90% 73.47%);
+max-width: 225px;
+margin-left: 1em;
+margin-top: 5em;
+}
+
+
+
+
+.arrow-bottom { transform: rotate(-90deg);}
 
 .R { color: #FDB633;
 }
@@ -270,11 +320,7 @@ margin-left: 3em;
 	width: 100%;
 }
 
-.grid-layout-one .grid-parent {
-	display: grid;
-	gap: 2em;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
+
 
 
 
@@ -611,34 +657,72 @@ margin-left: 3em;
 	height: 150px;
 }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-
-	ul{ float: right;}
 
 nav > ul > li {
   display: inline-block;
-}
-
-
-
-.navtoggle.responsive li  {
-  display: block;
 }
 
 nav {
   display: inline-block;
   width: 100%;
 }
-=======
+
+	ul{ float: right;
+		font-family: 'poppins-black';
+		margin-top: 4em;
+		padding-left: 0;
+		padding-right: 2em;
+	}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+li {margin-right: 1em;
+margin-top: 3em;}
+
+
+
+ nav {
+  display: inline-block;
+  width: 100%;
+}
+
+.grid-layout-home {
+	display: grid;
+	gap: 1em;
+	grid-auto-flow: row;
+}
+
+
+.grid-layout-home .content-box {
+	width: 100%;
+}
+
+.logo { margin-left: 5%;
+padding-top: 300px;}
+
+
+
+
+nav > ul > li {
+  display: inline-block;
+}
+
+li {margin-right: 1em;
+margin-top: 3em;}
+
+
+
+ nav {
+  display: inline-block;
+  width: 100%;
+}
+
+
+
+.logo { margin-left: 5%;
+padding-top: 300px;}
 
 
 
@@ -663,21 +747,11 @@ margin-top: 3em;}
   width: 100%;
 }
 
-.grid-layout-home .grid-parent {
-	display: grid;
-	gap: 1em;
-	grid-template-columns: 1fr;
-}
 
-.grid-layout-home .content-box {
-	width: 100%;
-}
+
 
 .logo { margin-left: 5%;
 padding-top: 300px;}
->>>>>>> Stashed changes
-=======
-
 
 
 	ul{ float: right;
@@ -701,62 +775,64 @@ margin-top: 3em;}
   width: 100%;
 }
 
-.grid-layout-home .grid-parent {
-	display: grid;
-	gap: 1em;
-	grid-template-columns: 1fr;
-}
-
-.grid-layout-home .content-box {
-	width: 100%;
-}
 
 .logo { margin-left: 5%;
 padding-top: 300px;}
->>>>>>> Stashed changes
-=======
-
-
-
-	ul{ float: right;
-		font-family: 'poppins-black';
-		margin-top: 4em;
-		padding-left: 0;
-		padding-right: 2em;
-	}
-
-nav > ul > li {
-  display: inline-block;
-}
-
-li {margin-right: 1em;
-margin-top: 3em;}
-
-
-
- nav {
-  display: inline-block;
-  width: 100%;
-}
-
-.grid-layout-home .grid-parent {
-	display: grid;
-	gap: 1em;
-	grid-template-columns: 1fr;
-}
-
-.grid-layout-home .content-box {
-	width: 100%;
-}
-
-.logo { margin-left: 5%;
-padding-top: 300px;}
->>>>>>> Stashed changes
 
 
 /* media query */
 
 @media only screen and (min-width: 640px) {
+
+
+.cs-p {
+font-size: 2em;
+margin-top: 2em;}
+
+.cs-p-bocav {
+font-size: 2em;
+color: #fdfdfd;
+margin-top: 2em;
+ }
+
+ .cs-picture-port{float: left;
+ shape-outside: polygon(0px 17%, 0px 81%, 84.90% 73.47%);
+ max-width: 425px;
+ margin-left: 1em;
+ margin-top: 5em;
+ }
+
+
+	.cs-h2 {color:#00000099;
+		text-align: right;
+	margin-bottom: 20px;
+	font-size: 5em}
+
+	.cs-h2-port {text-align: right;
+		 margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 4em;
+	}
+	.cs-h2-bocav {
+		margin-top: 0px;
+	margin-bottom: 20px;
+	font-size: 5em;}
+
+	.cs-picture {float: left;
+	shape-outside: polygon(polygon(0px 17%, 0px 81%, 95.12% 78.61%));
+	height: 100%;
+	max-width: 515px;
+	}
+
+	.cs-picture-bocav{float: left;
+	shape-outside:  polygon(0px 17%, 0px 81%, 94.97% 63.75%);
+	margin-left: 1em ;
+	margin-top: 2em;
+
+	max-width: 500px;
+	}
+
+
 
 	li {font-size: 20px;
 	}
@@ -768,10 +844,6 @@ padding-top: 300px;}
 			align-self: center;
 		}
 
-		.content-box {
-			width: 100%;
-		}
-
 
 	.case-studies {text-align: right;}
 
@@ -779,91 +851,18 @@ padding-top: 300px;}
 		width: 100%;
 	}
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-	ul:not(:last-child) {
-=======
-	/*	ul:not(:last-child) {
->>>>>>> Stashed changes
-=======
-	/*	ul:not(:last-child) {
->>>>>>> Stashed changes
-=======
-	/*	ul:not(:last-child) {
->>>>>>> Stashed changes
-		list-style-type: none;
-		margin: -8px;
-		padding: 10px;
-		font-family: 'lemon';
-		color: black;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-		font-size: 100%;
-	}
-
-	li a:not(:last-child) {
-=======
-		font-size: 80%;
-	} */
-
-/*	li a:not(:last-child) {
->>>>>>> Stashed changes
-=======
-		font-size: 80%;
-	} */
-
-/*	li a:not(:last-child) {
->>>>>>> Stashed changes
-=======
-		font-size: 80%;
-	} */
-
-/*	li a:not(:last-child) {
->>>>>>> Stashed changes
-		float:right;
-		color: #000;
-		padding: 32px 0px;
-		padding-top: 0px;
-		text-decoration: none;
-		align-items: baseline;
-	} */
-
-
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-
 	nav > ul {
 	  margin: 2em 0;
 	}
-=======
->>>>>>> Stashed changes
 
-
-=======
->>>>>>> Stashed changes
 
 	li a:hover {
 		color: #fdb633;
 	}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
 /* 2.3 stuff*/
 
 
-.navtoggle li:not(:last-child) {
-	display: inline-block;
-}
-
-.navtoggle li:not(:last-child) {
-	display: none;
-}
-
-.navtoggle, .navtoggle.responsive {
-	position: relative;
-}
 
 /* removed font-size as defined above */
 .navtoggle li .ham{
@@ -877,68 +876,49 @@ padding-top: 300px;}
 	 padding-top: 10%;
 }
 
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
 
-.navtoggle li:last-child {
-	display: none;
-}
 
-=======
 
 /* removed font-size as defined above */
 
 
+.arrow { margin-top: 0;
+max-height: 100%}
+.arrow-bocav {max-height: 100%;}
 
+.arrow-port {
 
-#id { max-height: 690px;}
-
-=======
-
-/* removed font-size as defined above */
-
-
-
-
-#id { max-height: 690px;}
-
-
+	max-height: 100%;
 }
-
-@media only screen and (min-width: 1024px) {
->>>>>>> Stashed changes
-
-
-<<<<<<< Updated upstream
-@media only screen and (min-width: 1024px) {
->>>>>>> Stashed changes
-
-
-<<<<<<< Updated upstream
-@media only screen and (min-width: 1024px) {
-
-
-=======
->>>>>>> Stashed changes
-=======
-
-/* removed font-size as defined above */
-
-
-
-
 #id { max-height: 690px;}
 
 
-}
+
+
+
 
 @media only screen and (min-width: 1024px) {
 
 
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
+.cs-p { font-size: 40px;
+margin-top: 0px;}
+
+
+.cs-p-bocav {
+font-size: 40px;
+margin-top: 0px;
+ }
+
+ .cs-p-port {
+ font-size: 40px;
+ }
+#id { max-height: 690px;}
+
+.arrow-bocav {max-height: 100%;
+margin-top: 12em;}
+
+
 	p {
 		font-size: 1.4em;
 		text-align: left;
@@ -958,76 +938,10 @@ padding-top: 300px;}
  ul { margin-right: 2em;}
 
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-	.grid-layout-home .grid-parent {
-		display: grid;
-		gap: 1em;
-		grid-template-columns: 2fr 1fr;
-	}
 
-
-
-/*buggy solution to mobile viewport allignment issue margin-top: -100px; when used in code chunck bellow */
-
-
-	/*	ul:not(:last-child){
-			list-style-type: none;
-			margin: -8px;
-			padding: 10px;
-			width: 100%;
-			font-family: 'lemon';
-			color: black;
-			font-size: 120%;
-			max-width: 100%;
-		}
-		*/
-=======
-
-
-/*
->>>>>>> Stashed changes
-=======
-
-
-/*
->>>>>>> Stashed changes
-=======
-
-
-/*
->>>>>>> Stashed changes
-
-		li a {
-			float: right;
-			color: #000;
-			padding: 32px 16px;
-			text-decoration: none;
-			align-items: baseline;
-		}
-		*/
-
-
-
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-/*hacky solutions to the hamberger being shown in this viewport which cause issues in the mobile viewport */
-/*
-		.navtoggle .ham{
-			display: none;
-		}
-#ham { opacity: 0%}
-*/
 		nav > ul {
 		  list-style-type: none;
 		  padding: 0;
 		}
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
 }
